@@ -110,11 +110,25 @@ console.log(epify("is awesome"));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("ESERCIZIO 6");
+
+function check3and7(pos) {
+  if (pos > 0 && (pos % 3 === 0 || pos % 7 === 0)) {
+    return true;
+  } else return false;
+}
+console.log(check3and7(22));
+console.log(check3and7(21));
+console.log(check3and7(27));
+console.log(check3and7(-9));
+
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("ESERCIZIO 7");
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
