@@ -150,6 +150,29 @@ console.log(reverseString(0));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("ESERCIZIO 8");
+
+const upperFirst = function (str) {
+  let words = str.split("");
+  console.log(words);
+
+  let stringaString = [];
+
+  for (i = 0; i < words.length; i++) {
+    let firstchar = words[i].charAt(0); //partendo dalla posizione 0
+    //console.log(firstchar);
+    let upperCase = firstchar.toUpperCase(); //tutto maiuscolo
+    //console.log(upperCase);
+    let cutString = words[i].slice(1); // prendo in considerazione la stringa dalla prima posiszione
+    console.log(cutString);
+    let finalWord = upperCase + cutString;
+    /* console.log(finalWord); */
+    stringaString.push(finalWord);
+  }
+  console.log(stringaString.join(""));
+};
+upperFirst("ok ci siamo!");
+
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
@@ -157,8 +180,29 @@ console.log(reverseString(0));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log("ESERCIZIO 9");
+
+function cutString(stringaString) {
+  const newString = stringaString.slice(1, stringaString.length - 1);
+
+  return newString;
+}
+console.log(cutString("EPICODE"));
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("ESERCIZIO 10");
+
+const giveMeRandom = function (n) {
+  const arr = [];
+
+  for (i = 0; i < n; i++) {
+    arr.push(Math.floor(Math.random() * 10));
+  }
+  return arr;
+};
+console.log(giveMeRandom(7));
