@@ -153,7 +153,7 @@ console.log(reverseString(0));
 console.log("ESERCIZIO 8");
 
 const upperFirst = function (str) {
-  let words = str.split("");
+  let words = str.split(""); // converto in array
   console.log(words);
 
   let stringaString = [];
@@ -169,7 +169,7 @@ const upperFirst = function (str) {
     /* console.log(finalWord); */
     stringaString.push(finalWord);
   }
-  console.log(stringaString.join(""));
+  console.log(stringaString.join("")); // riconverto in stringa
 };
 upperFirst("ok ci siamo!");
 
@@ -201,7 +201,7 @@ const giveMeRandom = function (n) {
   const arr = [];
 
   for (i = 0; i < n; i++) {
-    arr.push(Math.floor(Math.random() * 10));
+    arr.push(Math.floor(Math.random() * 11));
   }
   return arr;
 };
