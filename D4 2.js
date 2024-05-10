@@ -156,14 +156,14 @@ const upperFirst = function (str) {
   let words = str.split(""); // converto in array
   console.log(words);
 
-  let stringaString = [];
+  let stringaString = []; // creo un array
 
   for (i = 0; i < words.length; i++) {
     let firstchar = words[i].charAt(0); //partendo dalla posizione 0
     //console.log(firstchar);
     let upperCase = firstchar.toUpperCase(); //tutto maiuscolo
     //console.log(upperCase);
-    let cutString = words[i].slice(1); // prendo in considerazione la stringa dalla prima posiszione
+    let cutString = words[i].slice(1); // prendo in considerazione dalla posizione 1
     console.log(cutString);
     let finalWord = upperCase + cutString;
     /* console.log(finalWord); */
